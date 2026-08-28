@@ -254,21 +254,56 @@ body {
     }
 }
 @keyframes breathing {
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 0.68;
+    0% {
+        opacity: 0.65;
         box-shadow:
-            0 0 6px rgba(101, 230, 163, 0.55),
-            0 0 14px rgba(101, 230, 163, 0.22);
+            0 0 6px rgba(101, 230, 163, 0.45),
+            0 0 14px rgba(101, 230, 163, 0.18);
     }
 
-    50% {
-        transform: scale(1);
+    35% {
         opacity: 1;
         box-shadow:
-            0 0 8px rgba(101, 230, 163, 0.75),
-            0 0 20px rgba(101, 230, 163, 0.32);
+            0 0 9px rgba(101, 230, 163, 0.8),
+            0 0 24px rgba(101, 230, 163, 0.35);
+    }
+
+    55% {
+        opacity: 0.65;
+        box-shadow:
+            0 0 6px rgba(101, 230, 163, 0.45),
+            0 0 14px rgba(101, 230, 163, 0.18);
+    }
+
+    68% {
+        opacity: 0.2;
+        box-shadow:
+            0 0 3px rgba(101, 230, 163, 0.15),
+            0 0 7px rgba(101, 230, 163, 0.06);
+    }
+
+    72% {
+        opacity: 0;
+        box-shadow: none;
+    }
+
+    77% {
+        opacity: 0;
+        box-shadow: none;
+    }
+
+    88% {
+        opacity: 0.45;
+        box-shadow:
+            0 0 5px rgba(101, 230, 163, 0.35),
+            0 0 12px rgba(101, 230, 163, 0.12);
+    }
+
+    100% {
+        opacity: 0.65;
+        box-shadow:
+            0 0 6px rgba(101, 230, 163, 0.45),
+            0 0 14px rgba(101, 230, 163, 0.18);
     }
 }
 /* =================================
