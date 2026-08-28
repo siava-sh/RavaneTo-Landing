@@ -222,7 +222,7 @@ body {
         0 0 7px rgba(101, 230, 163, 0.9),
         0 0 18px rgba(101, 230, 163, 0.45);
 
-    animation: heartbeat 1.8s ease-in-out infinite;
+    animation: breathing 4s ease-in-out infinite;
 }
 
 @keyframes heartbeat {
@@ -253,7 +253,24 @@ body {
         opacity: 0.72;
     }
 }
+@keyframes breathing {
+    0%,
+    100% {
+        transform: scale(0.9);
+        opacity: 0.55;
+        box-shadow:
+            0 0 5px rgba(101, 230, 163, 0.45),
+            0 0 12px rgba(101, 230, 163, 0.18);
+    }
 
+    50% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow:
+            0 0 8px rgba(101, 230, 163, 0.8),
+            0 0 22px rgba(101, 230, 163, 0.35);
+    }
+}
 /* =================================
    CONTENT
 ================================= */
